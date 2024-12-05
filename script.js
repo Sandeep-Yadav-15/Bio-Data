@@ -11,17 +11,3 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Bio Data Loaded Successfully");
   });
   
-  // Add a hover effect to header elements for animation
-  const headerElements = document.querySelectorAll("header h1, header p, .social-links a");
-  
-  headerElements.forEach((element) => {
-    element.addEventListener("mouseover", () => {
-      element.style.color = "#0077b5";
-      element.style.transition = "color 0.3s ease";
-    });
-  
-    element.addEventListener("mouseout", () => {
-      element.style.color = "";
-    });
-  });
-  
