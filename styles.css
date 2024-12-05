@@ -1,83 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .passport-photo {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    /* object-fit: cover; */
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin: 10px 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0077b5;
+}
+
+.passport-photo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  object-fit: cover;
+}
+
+section h2 {
+  background: #0077b5;
+  color: white;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   header h1 {
-    font-size: 2.5em;
-    margin: 0;
+    font-size: 1.8em;
   }
-  
-  .social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #0077b5;
+
+  .passport-photo {
+    width: 100px;
+    height: 100px;
   }
-  
-  section h2 {
-    background: #333;
-    color: white;
-    padding: 5px 10px;
-    margin-bottom: 10px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
+
   table, th, td {
-    border: 1px solid #ddd;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
-
-  /* Smooth hover animation for text elements */
-header h1, header p, .social-links a {
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-header h1:hover, header p:hover, .social-links a:hover {
-  transform: scale(1.1);
-  color: #0077b5; /* LinkedIn blue for hover effect */
-}
-  
-  footer {
-    text-align: center;
-    margin-top: 20px;
     font-size: 0.9em;
-    color: #777;
   }
-  
+}
